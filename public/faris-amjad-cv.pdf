@@ -1,0 +1,40 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 220 >>
+stream
+BT
+/F1 24 Tf
+72 700 Td
+(Faris) Tj
+/F1 14 Tf
+0 -32 Td
+(Software Developer) Tj
+0 -40 Td
+(Email: hello@faris.dev) Tj
+0 -20 Td
+(Location: Lahore, Pakistan) Tj
+0 -40 Td
+(This is a placeholder CV. Replace public/faris-cv.pdf with your real resume.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+0
+%%EOF
