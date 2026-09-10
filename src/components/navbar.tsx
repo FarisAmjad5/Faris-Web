@@ -44,7 +44,7 @@ export function Navbar() {
       <div className="mx-auto flex w-full max-w-[1200px] items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <a href="#home" className="group flex items-center gap-2.5 font-display text-lg font-semibold">
           <LogoMark className="h-9 w-9 shrink-0 transition-transform duration-500 group-hover:rotate-[18deg]" />
-          <span>{siteConfig.name}</span>
+          <span className="whitespace-nowrap">{siteConfig.name}</span>
         </a>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -74,19 +74,23 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <a
-            href={siteConfig.cvHref}
-            download
-            className="btn-ghost hidden !px-4 !py-2 text-xs sm:!text-sm md:inline-flex"
-          >
-            <Download className="h-4 w-4" aria-hidden="true" />
-            Download CV
-          </a>
+          {/* Wrapper does the hiding: .btn-ghost sets its own `display`, which
+              beats the `hidden` utility when applied to the same element. */}
+          <span className="hidden md:block">
+            <a
+              href={siteConfig.cvHref}
+              download
+              className="btn-ghost !px-4 !py-2 text-xs sm:!text-sm"
+            >
+              <Download className="h-4 w-4" aria-hidden="true" />
+              Download CV
+            </a>
+          </span>
           <button
             type="button"
             onClick={toggleTheme}
             aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
-            className="flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] text-[var(--text)] transition-colors hover:border-[var(--border-hover)]"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] text-[var(--text)] transition-colors hover:border-[var(--border-hover)] sm:h-10 sm:w-10"
           >
             {theme === "dark" ? (
               <Sun className="h-[18px] w-[18px]" aria-hidden="true" />
@@ -100,7 +104,7 @@ export function Navbar() {
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
-            className="flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] text-[var(--text)] lg:hidden"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] text-[var(--text)] sm:h-10 sm:w-10 lg:hidden"
           >
             {mobileOpen ? (
               <X className="h-5 w-5" aria-hidden="true" />

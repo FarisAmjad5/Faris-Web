@@ -20,7 +20,7 @@ export function Footer() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                  className="-my-1 inline-block py-1 text-sm text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
                 >
                   {link.label}
                 </a>

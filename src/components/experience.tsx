@@ -57,7 +57,7 @@ export function Experience() {
                       <p className="text-[13px] font-medium text-[var(--accent)]">{item.company}</p>
                     </div>
                   </div>
-                  <span className="chip shrink-0 !py-0.5 !text-[11px]">{item.duration}</span>
+                  <span className="chip shrink-0 !py-0.5">{item.duration}</span>
                 </div>
 
                 <ul className="flex flex-col gap-3 border-t border-[var(--border)] pt-5">

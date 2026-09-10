@@ -120,7 +120,7 @@ export function Contact() {
                           <a
                             href={detail.href}
                             className={cn(
-                              "flex items-center gap-1.5 break-words text-sm font-medium transition-colors hover:text-[var(--accent)]",
+                              "-my-1 flex items-center gap-1.5 break-words py-1 text-sm font-medium transition-colors hover:text-[var(--accent)]",
                               detail.accent ? "text-[var(--success)]" : "text-[var(--text)]"
                             )}
                           >

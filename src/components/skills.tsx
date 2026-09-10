@@ -95,7 +95,7 @@ export function Skills() {
               <span className="text-[13px] font-semibold leading-none text-[var(--text)]">
                 {capability.title}
               </span>
-              <span className="text-[11px] leading-snug text-[var(--muted)]">
+              <span className="text-xs leading-snug text-[var(--muted)]">
                 {capability.description}
               </span>
             </div>

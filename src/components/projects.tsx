@@ -119,14 +119,14 @@ export function Projects() {
                           target="_blank"
                           rel="noreferrer noopener"
                           aria-label={`View ${project.title} project`}
-                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-all hover:border-[var(--border-hover)] hover:text-[var(--accent)]"
+                          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-all hover:border-[var(--border-hover)] hover:text-[var(--accent)] sm:h-9 sm:w-9"
                         >
                           <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                         </a>
                       ) : (
                         <span
                           aria-hidden="true"
-                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--border)]/50 text-[var(--muted)]/40"
+                          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--border)]/50 text-[var(--muted)]/40 sm:h-9 sm:w-9"
                         >
                           <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                         </span>
@@ -139,7 +139,7 @@ export function Projects() {
                       {project.tags.map((tag) => (
                         <li
                           key={tag}
-                          className={cn("chip !py-1 !text-[11px]", hue.text)}
+                          className={cn("chip !py-1", hue.text)}
                         >
                           {tag}
                         </li>

@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       <div className="mx-auto grid w-full max-w-[1200px] items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <Reveal className="flex flex-col items-start gap-6">
+        <Reveal className="flex min-w-0 flex-col items-start gap-6">
           <div className="flex flex-col items-start gap-2">
             <span className="chip">
               <span className="relative flex h-2 w-2">
@@ -71,7 +71,7 @@ export function Hero() {
           </ul>
         </Reveal>
 
-        <Reveal delay={150} className="flex flex-col gap-4">
+        <Reveal delay={150} className="flex min-w-0 flex-col gap-4">
           <div className="card overflow-hidden">
             <div className="flex items-center gap-2 border-b border-[var(--border)] px-4 py-3">
               <span className="h-3 w-3 rounded-full bg-[#f87171]" />
@@ -133,7 +133,7 @@ export function Hero() {
                   <span className="font-display text-lg font-semibold text-[var(--text)] sm:text-xl">
                     {stat.value}
                   </span>
-                  <span className="text-[11px] leading-tight text-[var(--muted)] sm:text-xs">
+                  <span className="text-xs leading-tight text-[var(--muted)]">
                     {stat.label}
                   </span>
                 </div>

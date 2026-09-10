@@ -70,11 +70,16 @@ export function Testimonials() {
                       onClick={() => goTo(i)}
                       aria-label={`Show highlight: ${highlight.title}`}
                       aria-selected={i === index}
-                      className={cn(
-                        "h-2 rounded-full transition-all",
-                        i === index ? "w-6 bg-[var(--accent)]" : "w-2 bg-[var(--border-hover)]"
-                      )}
-                    />
+                      className="group flex h-11 w-6 items-center justify-center"
+                    >
+                      <span
+                        className={cn(
+                          "h-2 rounded-full transition-all",
+                          i === index ? "w-6 bg-[var(--accent)]" : "w-2 bg-[var(--border-hover)]"
+                        )}
+                        aria-hidden="true"
+                      />
+                    </button>
                   ))}
                 </div>
                 <div className="flex items-center gap-2">
@@ -82,7 +87,7 @@ export function Testimonials() {
                     type="button"
                     onClick={() => goTo(index - 1)}
                     aria-label="Previous highlight"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)]"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] sm:h-9 sm:w-9"
                   >
                     <ChevronLeft className="h-4 w-4" aria-hidden="true" />
                   </button>
@@ -90,7 +95,7 @@ export function Testimonials() {
                     type="button"
                     onClick={() => goTo(index + 1)}
                     aria-label="Next highlight"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)]"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] sm:h-9 sm:w-9"
                   >
                     <ChevronRight className="h-4 w-4" aria-hidden="true" />
                   </button>
