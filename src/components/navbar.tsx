@@ -138,7 +138,7 @@ export function Navbar() {
                     onClick={() => setMobileOpen(false)}
                     aria-current={isActive ? "page" : undefined}
                     className={cn(
-                      "block min-h-[44px] rounded-lg px-3 py-2.5 text-sm font-medium text-[var(--muted)] transition-colors hover:bg-[var(--surface-soft)] hover:text-[var(--text)]",
+                      "flex min-h-[44px] items-center justify-center rounded-lg px-3 py-2.5 text-center text-sm font-medium text-[var(--muted)] transition-colors hover:bg-[var(--surface-soft)] hover:text-[var(--text)]",
                       isActive && "bg-[var(--surface-soft)] text-[var(--text)]"
                     )}
                   >
